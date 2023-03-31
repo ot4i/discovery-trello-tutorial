@@ -170,7 +170,7 @@
                 "overview": 
 				{
                     "name": "Prepare",
-                    "heading": "This section describes how to complete the message flow configuration using the Connector Discovery process",
+                    "heading": "This section describes how to use the Connector Discovery process. If you would prefer you can skip this Prepare section and go straight to the Run section of the tutorial and follow Option 2 which uses a completed message flow.",
                     "_prepareComment": "A description of what just happened when the user clicked Import, and what will happen when the user clicks Deploy.",
                     "sections": [
 				    {
@@ -214,7 +214,7 @@
 		}
 	  }, 
                             {
-                                 "details": "A new Configure connector node window will open. If you had previously connected to a Trello system then a list of those connections would be displayed, but in this example the status of the Trello connector is shown as <code>Not connected</code>. <strong>Before you use the Trello Request node in a message flow as part of this tutorial, you will need to have access to Trello. Underneath where the panel says <code>Not connected</code>, expand the section named <code>Boards</code> and choose the action <code>Retrieve boards</code>. The list of objects and actions will be replaced with a Connect button. Click the Connect button. Fill out the requested connection information for your Trello account including the <code>Application key</code>, and <code>Access token</code>. You may need to wait a few seconds for the connection to be made. A dropdown will appear asking you to select the Team for which the boards will be retrieved. Choose your team and for simplicity change the <code>Maximum number of items to retrieve</code> from its initial setting of 10 down to 1, and change the radio button to <code>Process 1 item from the collection</code>."
+                                 "details": "A new Configure connector node window will open. If you had previously connected to a Trello system then a list of those connections would be displayed, but in this example the status of the Trello connector is shown as <code>Not connected</code>. Before you use the Trello Request node in a message flow as part of this tutorial, you will need to have access to Trello. Underneath where the panel says <code>Not connected</code>, expand the section named <code>Boards</code> and choose the action <code>Retrieve boards</code>. The list of objects and actions will be replaced with a Connect button. Click the Connect button. Fill out the requested connection information for your Trello account including the <code>Application key</code>, and <code>Access token</code>. You may need to wait a few seconds for the connection to be made. A dropdown will appear asking you to select the Team for which the boards will be retrieved. Choose your team and for simplicity change the <code>Maximum number of items to retrieve</code> from its initial setting of 10 down to 1, and change the radio button to <code>Process 1 item from the collection</code>."
 							},
 							{
                                  "details": "At the top of the window click the Save button, and you should see a confirmation message briefly appear. Close the Configure connector window and return to the Toolkit. <strong>It is important to remember this step</strong> otherwise the vault will remain locked and you will be unable to start your integration server TEST_SERVER when you come to test the flow in the last section of the tutorial. You will now find that the properties of the Trello Request node in the message flow have been updated. Save the message flow.  Explore the properties of the Trello Request node. The Basic properties tab will now display a short description of <code>Retrieve boards</code>, along with the <strong>Action</strong> (<code>RETRIEVEALL</code>) and the <strong>Object</strong> (<code>Board</code>). On the Connection properties tab, the <strong>Policy</strong> will have been configured as <code>{ExamplePolicyProjectTrello}:Trello1</code>."
@@ -237,7 +237,7 @@
                     "_runComment": "The full steps for the user to run through the tutorial. Use 'sections' to render paragraphs, 'steps' with a type of 'ordered' or 'unordered' to render HTML lists, and 'substeps' to render nested lists.",
                 "sections":[                            
 					           {  
-								"section": "<b>Option 1: Use the Flow Exerciser to test the tutorial scenario</b>",
+								"section": "<b>Option 1: Test out the tutorial scenario using ExampleTrelloFlow</b>",
                                 "steps": {
                                     "type": "ordered",
                                     "details": [                                      
@@ -257,7 +257,7 @@
                                     }
                             },							   
 							{
-								"section": "<b>Option 2: Using the alternative provided application named CompleteExampleTrello to test the tutorial scenario</b>",
+								"section": "<b>Option 2: Test out the tutorial scenario using CompleteExampleTrelloFlow</b>",
                                 "steps": {
                                     "type": "ordered",
                                     "details": [                                      
