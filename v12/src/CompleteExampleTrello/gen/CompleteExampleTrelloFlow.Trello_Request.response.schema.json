@@ -1,0 +1,400 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "items": {
+    "type": "object",
+    "properties": {
+      "idAction": {
+        "displayOrder": 1,
+        "title": "Action ID",
+        "description": "The ID that identifies an action on the board",
+        "type": "string"
+      },
+      "idCard": {
+        "displayOrder": 1,
+        "title": "Card ID",
+        "description": "The ID that identifies card on the board",
+        "type": "string"
+      },
+      "idChecklist": {
+        "displayOrder": 1,
+        "title": "Checklist ID",
+        "description": "The ID that identifies a checklist on the board",
+        "type": "string"
+      },
+      "idLabel": {
+        "displayOrder": 1,
+        "title": "Label ID",
+        "description": "The ID that identifies a label on the board",
+        "type": "string"
+      },
+      "idList": {
+        "displayOrder": 1,
+        "title": "List ID",
+        "description": "The ID that identifies a list on the board",
+        "type": "string"
+      },
+      "idMember": {
+        "displayOrder": 1,
+        "title": "Member ID",
+        "description": "The ID that identifies a member of the board",
+        "type": "string"
+      },
+      "idNotification": {
+        "displayOrder": 1,
+        "title": "Notification ID",
+        "description": "The ID that identifies a notification for the board",
+        "type": "string"
+      },
+      "idOrganization": {
+        "displayOrder": 1,
+        "title": "Team ID",
+        "description": "The ID that identifies a Trello team or organization",
+        "type": "string"
+      },
+      "id": {
+        "displayOrder": 1,
+        "title": "Board ID",
+        "description": "The ID that identifies a Trello board",
+        "type": "string"
+      },
+      "name": {
+        "displayOrder": 2,
+        "title": "Name",
+        "description": "The name of the Trello board",
+        "type": "string"
+      },
+      "desc": {
+        "displayOrder": 3,
+        "title": "Description",
+        "description": "The description of the Trello board",
+        "type": "string"
+      },
+      "descData": {
+        "displayOrder": 4,
+        "title": "Data description",
+        "description": "Data description",
+        "type": "string"
+      },
+      "closed": {
+        "displayOrder": 5,
+        "title": "Closed",
+        "description": "Specifies whether the Trello board is closed",
+        "type": "boolean"
+      },
+      "pinned": {
+        "displayOrder": 6,
+        "title": "Pinned",
+        "description": "Specifies whether the board is pinned to the header menu in Trello",
+        "type": "boolean"
+      },
+      "url": {
+        "displayOrder": 7,
+        "title": "URL",
+        "description": "The URL of the Trello board",
+        "type": "string"
+      },
+      "shortUrl": {
+        "displayOrder": 8,
+        "title": "Short URL",
+        "description": "The short URL of the Trello board",
+        "type": "string"
+      },
+      "prefs_permissionLevel": {
+        "displayOrder": 9,
+        "title": "Permission level",
+        "description": "Specifies the permissions for the board",
+        "type": "string"
+      },
+      "prefs_voting": {
+        "displayOrder": 10,
+        "title": "Voting preferences ",
+        "description": "Specifies whether voting is enabled for the board",
+        "type": "string"
+      },
+      "prefs_comments": {
+        "displayOrder": 11,
+        "title": "Comments preferences",
+        "description": "Specifies whether commenting is enabled for the board",
+        "type": "string"
+      },
+      "prefs_invitations": {
+        "displayOrder": 12,
+        "title": "Invitations preferences",
+        "description": "Specifies the preferences for inviting members to access the board",
+        "type": "string"
+      },
+      "prefs_selfJoin": {
+        "displayOrder": 13,
+        "title": "Self join preferences",
+        "description": "Specifies whether team members can join the board without being invited",
+        "type": "boolean"
+      },
+      "prefs_cardCovers": {
+        "displayOrder": 1,
+        "title": "Card covers preferences",
+        "description": "Specifies whether images can be added to the front of cards on the board",
+        "type": "boolean"
+      },
+      "prefs_background": {
+        "displayOrder": 1,
+        "title": "Background preferences",
+        "description": "Specifies the preferences for changing the background of a board",
+        "type": "string"
+      },
+      "prefs_cardAging": {
+        "displayOrder": 1,
+        "title": "Card aging preferences",
+        "description": "Specifies whether card aging is enabled for the board so that cards that haven't been accessed for a while change visually",
+        "type": "string"
+      },
+      "prefs": {
+        "displayOrder": 1,
+        "title": "Preferences",
+        "description": "Specifies preferences for the board",
+        "type": "object",
+        "properties": {
+          "permissionLevel": {
+            "title": "Permission level preferences",
+            "description": "Specifies who can access the board, whether it's private, public, or accessible to a org",
+            "type": "string"
+          },
+          "voting": {
+            "title": "Voting preferences",
+            "description": "Specifies who can vote on this board; values can be 'disabled', 'members', 'observers', 'team', or 'public'",
+            "type": "string"
+          },
+          "comments": {
+            "title": "Comments preferences",
+            "description": "Specifies who can comment on this board; values are disabled, members, observers, a team, or public",
+            "type": "string"
+          },
+          "invitations": {
+            "title": "Invitations preferences",
+            "description": "Specifies who can invite members to a board, whether it's admins or members",
+            "type": "string"
+          },
+          "selfJoin": {
+            "title": "Self join preferences",
+            "description": "Specifies whether team members can join the board without being invited; values are 'true' or 'false'",
+            "type": "boolean"
+          },
+          "cardCovers": {
+            "title": "Card covers preferences",
+            "description": "Specifies whether card cover images are enabled; values are 'true' or 'false'",
+            "type": "boolean"
+          },
+          "cardAging": {
+            "title": "Card aging preferences",
+            "description": "Specifies whether pirate or regular mode is enabled for card aging",
+            "type": "string"
+          },
+          "calendarFeedEnabled": {
+            "title": "Calendar feed enabled preferences",
+            "description": "Specifies whether the calendar feed options is enabled; values are 'true' or 'false'",
+            "type": "boolean"
+          },
+          "background": {
+            "title": "Background preferences",
+            "description": "Specifies the board background; values are the name of a standard background or the ID of a custom background",
+            "type": "string"
+          },
+          "backgroundImage": {
+            "title": "Background image preferences",
+            "description": "Specifies a background image for the board",
+            "type": "boolean"
+          },
+          "backgroundImageScaled": {
+            "title": "Background image scaled preferences",
+            "description": "Specifies a scaled background image for the board",
+            "type": "boolean"
+          },
+          "backgroundTile": {
+            "title": "Background tile preferences",
+            "description": "Specifies a background tile for the board",
+            "type": "boolean"
+          },
+          "backgroundBrightness": {
+            "title": "Background brightness preferences",
+            "description": "Specifies the brightness of the board background",
+            "type": "string"
+          },
+          "backgroundColor": {
+            "title": "Background color preferences",
+            "description": "Specifies the color of the background of the board",
+            "type": "string"
+          },
+          "canBePublic": {
+            "title": "Can be public preferences",
+            "description": "Specifies whether the board is public",
+            "type": "boolean"
+          },
+          "canBeOrg": {
+            "title": "Can be org preferences",
+            "description": "Specifies whether the board is visible to members of a team",
+            "type": "boolean"
+          },
+          "canBePrivate": {
+            "title": "Can be private preferences",
+            "description": "Specifies whether the board is private",
+            "type": "boolean"
+          },
+          "canInvite": {
+            "title": "Can invite preferences",
+            "description": "Specifies whether members can be invited to join the board",
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "labelNames": {
+        "displayOrder": 1,
+        "title": "Label names",
+        "description": "The names of labels that you can add to a board",
+        "type": "object",
+        "properties": {
+          "green": {
+            "title": "Green",
+            "description": "A green label",
+            "type": "string"
+          },
+          "yellow": {
+            "title": "Yellow",
+            "description": "A yellow label",
+            "type": "string"
+          },
+          "orange": {
+            "title": "Orange",
+            "description": "An orange label",
+            "type": "string"
+          },
+          "red": {
+            "title": "Red",
+            "description": "A red label",
+            "type": "string"
+          },
+          "purple": {
+            "title": "Purple",
+            "description": "A purple label",
+            "type": "string"
+          },
+          "blue": {
+            "title": "Blue",
+            "description": "A blue label",
+            "type": "string"
+          },
+          "sky": {
+            "title": "Sky",
+            "description": "A sky-colored label",
+            "type": "string"
+          },
+          "lime": {
+            "title": "Lime",
+            "description": "A lime-colored label",
+            "type": "string"
+          },
+          "pink": {
+            "title": "Pink",
+            "description": "A pink label",
+            "type": "string"
+          },
+          "black": {
+            "title": "Black",
+            "description": "A black label",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "invitations": {
+        "displayOrder": 1,
+        "title": "Invitations",
+        "description": "Specifies whether admins or members can invite members to join a board",
+        "type": "string"
+      },
+      "memberships": {
+        "displayOrder": 1,
+        "title": "Memberships",
+        "description": "Members of a Trello board",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "ID",
+              "description": "The ID that identifies a member of the board",
+              "type": "string"
+            },
+            "idMember": {
+              "title": "Member ID",
+              "description": "The ID that identifies a member of the board",
+              "type": "string"
+            },
+            "memberType": {
+              "title": "Member Type",
+              "description": "The type of member of a Trello board",
+              "type": "string"
+            },
+            "unconfirmed": {
+              "title": "Unconfirmed",
+              "description": "Specifies whether the board member is unconfirmed",
+              "type": "boolean"
+            },
+            "deactivated": {
+              "title": "Deactivated",
+              "description": "Specifies whether the board member is deactivated",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalItems": false
+      },
+      "shortLink": {
+        "displayOrder": 1,
+        "title": "Short Link",
+        "description": "The short link to the board",
+        "type": "string"
+      },
+      "subscribed": {
+        "displayOrder": 1,
+        "title": "Subscribed",
+        "description": "Subscribed",
+        "type": "boolean"
+      },
+      "dateLastActivity": {
+        "displayOrder": 1,
+        "title": "Last activity date",
+        "description": "The date of the last activity on the board",
+        "type": "string"
+      },
+      "dateLastView": {
+        "displayOrder": 1,
+        "title": "Last view date",
+        "description": "The date when the board was last viewed",
+        "type": "string"
+      },
+      "idTags": {
+        "displayOrder": 1,
+        "title": "Tag IDs",
+        "description": "Tag identifiers",
+        "type": "string"
+      },
+      "invited": {
+        "displayOrder": 1,
+        "title": "Invited",
+        "description": "Invited",
+        "type": "boolean"
+      },
+      "starred": {
+        "displayOrder": 1,
+        "title": "Starred",
+        "description": "Specifies whether the board is starred so that it appears at the top of your boards page",
+        "type": "boolean"
+      }
+    },
+    "title": "Board",
+    "additionalProperties": false
+  },
+  "type": "array",
+  "title": "Board"
+}
